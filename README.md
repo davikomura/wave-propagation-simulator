@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+# Simulador de Propagação de Ondas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um simulador interativo que permite visualizar diferentes tipos de ondas em diversos meios, com controle em tempo real das condições iniciais e de contorno. O projeto é construído utilizando **React** no frontend e **Python** no backend para resolver as equações diferenciais parciais (PDEs).
 
-Currently, two official plugins are available:
+## Visão Geral
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O objetivo deste projeto é criar um visualizador de ondas que permite aos usuários explorar como diferentes tipos de ondas se comportam ao se propagar em diferentes meios. A interface de usuário é moderna e intuitiva, com gráficos interativos e controles em tempo real.
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Frontend**: React com Vite e TypeScript
+- **Estilização**: Tailwind CSS
+- **Backend**: Python para resolver PDEs usando bibliotecas científicas
+- **Comunicação**: API REST ou WebSocket para comunicação entre frontend e backend
 
-- Configure the top-level `parserOptions` property like this:
+## Estrutura de Pastas
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+```plaintext
+/simulador-ondas
+├── /public                # Arquivos estáticos públicos
+├── /src                   # Código-fonte principal
+│   ├── /assets            # Arquivos de mídia
+│   ├── /components        # Componentes reutilizáveis
+│   ├── /hooks             # Custom Hooks
+│   ├── /pages             # Páginas principais
+│   ├── /services          # Funções para comunicação com o backend
+│   ├── /context           # Context API para estado global
+│   ├── /types             # Definições de tipos TypeScript
+│   ├── /utils             # Funções utilitárias
+│   ├── App.tsx            # Componente principal do React
+│   ├── main.tsx           # Arquivo de entrada do React
+│   └── index.css          # Estilos globais da aplicação
+├── /tests                 # Testes unitários e de integração
+├── vite.config.ts         # Configurações do Vite
+├── tsconfig.json          # Configurações do TypeScript
+└── README.md              # Documentação do projeto
