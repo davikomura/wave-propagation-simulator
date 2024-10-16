@@ -5,7 +5,7 @@ Um simulador interativo que permite visualizar diferentes tipos de ondas em dive
 
 ## Visão Geral
 
-O objetivo deste projeto é criar um visualizador de ondas que permite aos usuários explorar como diferentes tipos de ondas se comportam ao se propagar em diferentes meios. A interface de usuário é moderna e intuitiva, com gráficos interativos e controles em tempo real.
+O objetivo deste projeto é criar um visualizador de ondas que permite aos usuários explorar como diferentes tipos de ondas se comportam ao se propagar em diferentes meios. A interface do usuário é moderna e intuitiva, com gráficos interativos e controles em tempo real.
 
 ## Tecnologias Utilizadas
 
@@ -50,50 +50,50 @@ Siga os passos abaixo para configurar o projeto em seu ambiente local:
 
 1. **Clone o repositório**
 
-```bash
-git clone https://github.com/seu-usuario/simulador-ondas.git
-cd simulador-ondas
-```
+   ```bash
+   git clone https://github.com/seu-usuario/simulador-ondas.git
+   cd simulador-ondas
+   ```
 
 2. **Instale as dependências do frontend**
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
 3. **Configure o Tailwind CSS**
 
-Certifique-se de que as diretivas do Tailwind CSS estão no arquivo `index.css`:
+   Certifique-se de que as diretivas do Tailwind CSS estão no arquivo `index.css`:
 
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
+   ```css
+   @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+   ```
 
 4. **Inicie o servidor de desenvolvimento**
 
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
 5. **Instale as dependências do backend (Python)**
 
-Se necessário, crie um ambiente virtual e instale as bibliotecas necessárias:
+   Se necessário, crie um ambiente virtual e instale as bibliotecas necessárias:
 
-```bash
-python -m venv venv
-source venv/bin/activate  # No Windows, use `venv\Scripts\activate`
-pip install -r requirements.txt
-```
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # No Windows, use `venv\Scripts\activate`
+   pip install -r requirements.txt
+   ```
 
 6. **Inicie o backend**
 
-Execute o servidor Python para resolver as PDEs:
+   Execute o servidor Python para resolver as PDEs:
 
-```bash
-python server.py
-```
+   ```bash
+   python server.py
+   ```
 
 ## Como Usar
 

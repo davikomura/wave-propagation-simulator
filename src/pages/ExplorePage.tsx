@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom';
 
 const waveList = [
-    { name: 'Onda Mecânica', path: '/explore/wave/mechanical' },
-    { name: 'Onda Eletromagnética', path: '/explore/wave/electromagnetic' },
-    { name: 'Onda de Choque', path: '/explore/wave/shock' },
-    { name: 'Onda de Som', path: '/explore/wave/sound' },
-    { name: 'Onda de Luz', path: '/explore/wave/light' },
+    { name: 'Equação da Onda 1D', path: '/explore/wave/wave1d' },
+    { name: 'Equação da Onda 2D', path: '/explore/wave/wave2d' },
+    { name: 'Equação da Onda 3D', path: '/explore/wave/wave3d' },
+    { name: 'Equação de D’Alembert', path: '/explore/wave/dalembert' }
   ];
   
 
